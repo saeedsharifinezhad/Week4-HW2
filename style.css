@@ -2,9 +2,171 @@
     font-family: IranYekanX;
     src: url(fonts/IranYekanXVFaNumVF.woff2);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: IranYekanX;
+}
+
+body {
+    padding: 20px;
+    background: linear-gradient(200deg, #DCE7F5, #EFF2F6);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* --- font style area */
+.h22o {
+    color: #A04000;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.h24b {
+    color: #1A222C;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.h24w {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.h20o {
+    color: #A04000;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.p15g {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #5F748C;
+    text-decoration: none;
+}
+
+.p14b {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1A222C;
+    text-decoration: none;
+}
+
+.p14g {
+    font-size: 14px;
+    font-weight: 400;
+    color: #5F748C;
+    text-decoration: none;
+}
+
+
+
+/* --- font style area */
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 55px;
+    border: solid 1px #D0D7E0;
+}
+
+.navigationMenu {
+    display: flex;
+    gap: 30px;
+    color: #1A222C;
+}
+
+.guide {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.startGuide {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin: 20px 0;
+    justify-content: space-between;
+    background: linear-gradient(155deg,
+            #1B4064,
+            #143f69,
+            #853e10,
+            #c05209);
+    padding: 20px;
+    border-radius: 15px;
+    border-right: solid 10px #1A222C;
+    color: white;
+}
+
+.startGuide svg {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    z-index: 0;
+}
+
+.startGuide span {
+    width: fit-content;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    background-color: #1a222c9d;
+    border: solid 1px rgba(255, 255, 255, 0.548);
+}
+
+.startGuideCn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.guideCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.guideCard {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    border: solid 1px #D0D7E0;
+}
+
+.guideTerms {
+    background-color: #FFE8D6;
+    padding: 15px;
+    border-radius: 10px;
+    border-right: solid 5px #D35400;
+}
+
+@media (min-width: 768px) {
+    .guide {
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        gap: 20px;
+    }
+
+    .guideCards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
 }
